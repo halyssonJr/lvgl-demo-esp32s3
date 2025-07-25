@@ -1,0 +1,9 @@
+<project>
+    <targets>
+        <target name="stream_deck">
+            <display width="800" height="420" color_format="rgb565"/>
+            <memory name="ext_ram" size="100k"/>
+            <memory name="int_flash" size="512K"/>
+        </target>
+    </targets>
+</project>

@@ -1,0 +1,76 @@
+<screen>
+    <view width="800" height="420" style_bg_color="0x1a1a1a" style_border_width="0" style_pad_all="0">
+
+        <lv_obj width="800" 
+                height="420" 
+                style_bg_color="0x1a1a1a" 
+                style_border_width="0" 
+                style_pad_all="24"
+                flex_flow="column" scrollable="false">
+
+            <lv_obj width="100%" 
+                    height="80" 
+                    style_bg_color="0x1a1a1a" 
+                    style_border_width="0" 
+                    style_pad_all="0">
+                <lv_label text="Stream Deck LVGL" 
+                          style_text_color="0xffffff" 
+                          style_text_align="center"
+                          align="center">
+                </lv_label>
+            </lv_obj>
+
+            <lv_obj width="100%" 
+                    height="300" 
+                    style_bg_color="0x1a1a1a" 
+                    style_border_width="0" 
+                    style_pad_all="0"
+                    style_layout="flex"
+                    flex_flow="row_wrap"
+                    style_flex_main_place="space_evenly"
+                    style_flex_cross_place="space_evenly" scrollable="false">
+                
+                <lv_obj name="contatiner_top"
+                    width="100%"
+                    height="150" 
+                    style_bg_color="0x1a1a1a" 
+                    style_border_width="0" 
+                    style_pad_all="0"
+                    flex_flow="row" style_flex_main_place="space_evenly"
+                    style_flex_cross_place="space_evenly" scrollable="false">
+
+                     <deck_btn bg_color="0x4CAF50" image_size="64" button_image="power_icon" button_text="Power" >
+                        <event_cb callback="button_cb" trigger="clicked"/>
+                     </deck_btn>
+                    <deck_btn bg_color="0x9C27B0" image_size="64" button_image="media_icon" button_text="Media" >
+                        <event_cb callback="button_cb" trigger="clicked" />
+                    </deck_btn>
+                    <deck_btn bg_color="0x00BCD4" image_size="64" button_image="game_icon" button_text="Media" >
+                        <event_cb callback="button_cb" trigger="clicked" />
+                    </deck_btn>
+                </lv_obj>
+
+                <lv_obj name="contatiner_bottom"
+                    width="100%"
+                    height="150" 
+                    style_bg_color="0x1a1a1a" 
+                    style_border_width="0" 
+                    style_pad_all="0"
+                    flex_flow="row" style_flex_main_place="space_evenly"
+                    style_flex_cross_place="space_evenly" scrollable="false">
+
+                    <deck_btn bg_color="0xFF5722" image_size="64" button_image="social_icon" button_text="Social" >
+                        <event_cb callback="button_cb" trigger="clicked" />
+                    </deck_btn>
+                    <deck_btn bg_color="0x2196F3" image_size="64" button_image="work_icon" button_text="Social" >
+                        <event_cb callback="button_cb" trigger="clicked" />
+                    </deck_btn>
+                    <deck_btn bg_color="0x607D8B" image_size="64" button_image="settings_icon" button_text="Settings" >
+                        <event_cb callback="button_cb" trigger="clicked" />
+                    </deck_btn>
+                </lv_obj>
+            </lv_obj>
+        </lv_obj>
+    </view>
+</screen>
+

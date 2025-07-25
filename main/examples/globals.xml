@@ -1,0 +1,26 @@
+<globals>
+    <api>
+        <!-- Add <enumdefs> here -->
+    </api>
+
+    <consts>
+        <!-- Add <px>, <int>, <color> etc here -->
+    </consts>
+
+    <styles>
+        <!-- Add <style> tags here -->
+    </styles>
+
+    <images>
+
+        <file name="power_icon" src_path="images/power.png"></file>
+        <file name="settings_icon" src_path="images/settings.png"></file>
+        <file name="social_icon" src_path="images/social.png"></file>
+        <file name="game_icon" src_path="images/game.png"></file>
+        <file name="media_icon" src_path="images/media.png"></file>
+        <file name="work_icon" src_path="images/work.png"></file>
+    </images>
+
+    <fonts>
+    </fonts>
+</globals>

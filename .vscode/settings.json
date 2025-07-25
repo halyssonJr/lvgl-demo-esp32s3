@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "touch_i2c.h": "c",
+        "examples.h": "c",
+        "esp_lcd_ili9341.h": "c",
+        "lcd_display.h": "c"
+    }
+}

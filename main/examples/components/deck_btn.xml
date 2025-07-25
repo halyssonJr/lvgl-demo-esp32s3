@@ -1,0 +1,47 @@
+<component>
+    <api>
+        <prop name="button_image" type="image" default="default_icon"/>
+        <prop name="button_text" type="string" default="Button"/>
+        <prop name="text_color" type="color" default="0xFFFFFF"/>
+        <prop name="bg_color" type="color" default="0x2a2930"/>
+        <prop name="image_size" type="int" default="48"/>
+        <prop name="text_font" type="string" default="lv_font_default_36"/>
+        <!-- <prop name="image_x_offset" type="int" default="0"/> -->
+        <!-- <prop name="image_y_offset" type="int" default="0"/> -->
+        <prop name="text_x_offset" type="int" default="0"/>
+        <prop name="text_y_offset" type="int" default="0"/>
+    </api>
+
+    <view extends="lv_button" 
+          height="140" 
+          width="140" 
+          style_radius="24" 
+          style_shadow_opa="0" 
+          style_bg_color="$bg_color"
+          style_border_width="0"
+          style_pad_all="16"
+          style_flex_flow="column"
+          style_flex_main_place="space_evenly"
+          style_flex_cross_place="center">
+
+        <lv_obj width="$image_size" 
+                height="$image_size" 
+                style_bg_opa="0"
+                style_border_width="0"
+                style_pad_all="0"
+                scrollable="false"
+                align="center">
+            <lv_image src="$button_image" 
+                      align="center">
+            </lv_image>
+        </lv_obj>
+
+        <lv_label text="$button_text" 
+                  align="bottom_mid"
+                  x="$text_x_offset"
+                  y="$text_y_offset"
+                  style_text_color="$text_color"
+                  style_text_align="center">
+        </lv_label>
+    </view>
+</component>
